@@ -24,7 +24,7 @@ To install manually, on a bare server, as root:
     source $HOME/.cargo/env
     cargo install diesel_cli --no-default-features --features "postgres"
     cd /srv/fatcat
-    git clone https://github.com/internetarchive/fatcat.git
+    git clone https://github.com/internetarchive/fatcat.git .
     cd rust
     cargo build
     echo "DATABASE_URL=postgres://fatcat@localhost/fatcat" > .env
